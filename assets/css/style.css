@@ -1638,7 +1638,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+  color: white; /* Default text color */
 }
 
 
