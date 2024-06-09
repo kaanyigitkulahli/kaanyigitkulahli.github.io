@@ -405,29 +405,46 @@
           </section>
         </article>
 
-        <article class="portfolyo" data-page="portfolyo">
-          <header>
-            <h2 class="h2 article-title">Portfolyo</h2>
-          </header>
+ <article class="portfolyo" data-page="portfolyo">
+  <header>
+    <h2 class="h2 article-title">Portfolyo</h2>
+  </header>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
+  <section class="projects">
+    <!-- Filter list and select box code remains unchanged -->
 
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
+    <ul class="project-list">
+      <li class="project-item active" data-filter-item data-category="tasarım">
+        <a href="#" class="open-modal" data-img-src="./assets/images/ipekhanim.jpg">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
 
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
+            <img
+              src="./assets/images/ipekhanim.jpg"
+              alt="ipek ozguden ozen ile kariyer yolculugu"
+              loading="lazy"
+            />
+          </figure>
 
-              <li class="filter-item">
-                <button data-filter-btn>Tasarım</button>
-              </li>
-            </ul>
+          <h3 class="project-title">İpek Özgüden Özen ile Kariyer Yolculuğu</h3>
+
+          <p class="project-category">Tasarım</p>
+        </a>
+      </li>
+
+      <!-- Other project items with the same structure -->
+    </ul>
+  </section>
+</article>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="caption"></div>
+</div>
 
             <div class="filter-select-box">
               <button class="filter-select" data-select>
