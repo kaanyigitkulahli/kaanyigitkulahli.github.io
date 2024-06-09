@@ -20,34 +20,6 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-// Get the modal
-var modal = document.getElementById("modal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementById("modal-img");
-var captionText = document.getElementById("caption");
-
-// Get all the images in the portfolio section
-var images = document.querySelectorAll('.open-modal');
-
-// Add click event listener to each image
-images.forEach(function(image) {
-  image.addEventListener('click', function(event) {
-    event.preventDefault();
-    modal.style.display = "block";
-    modalImg.src = this.getAttribute('data-img-src');
-    captionText.innerHTML = this.querySelector('.project-title').innerHTML;
-  });
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
